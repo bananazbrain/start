@@ -1,0 +1,1 @@
+const PATH = require('./node/paths');

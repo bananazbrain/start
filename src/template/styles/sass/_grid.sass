@@ -1,0 +1,65 @@
+.case
+	position: relative
+	width: (1170px + 30px)
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+	@media screen and (max-width: 1199px)
+		width: 950px
+	@media screen and (max-width: 992px)
+		width: 750px
+	@media screen and (max-width: 767px)
+		width: 100%
+
+
+.row, .col
+	display: flex
+	flex-wrap: wrap
+
+.row
+	flex-direction: row
+	&-r
+		flex-direction: row-reverse
+
+.col
+	flex-direction: column
+	&-r
+		flex-direction: column-reverse
+
+
+.row, .col
+	&.--left
+		justify-content: flex-start
+
+	&.--right
+		justify-content: flex-end
+
+	&.--mid
+		justify-content: center
+
+	&.--between
+		justify-content: space-between
+
+	&.--around
+		justify-content: space-around
+
+	&.--top
+		align-items: flex-start
+	&.--bottom
+		align-items: flex-end
+	&.--mid
+		align-items: center
+	&.--baseline
+		align-items: baseline
+	&.--strech
+		align-items: stretch 
+
+.left
+	margin-left: auto
+
+.mid
+	margin-left: auto
+	margin-right: auto
+
+.right
+	margin-left: auto

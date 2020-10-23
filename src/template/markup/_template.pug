@@ -1,0 +1,18 @@
+include _vars
+doctype html
+block vars
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon" href="upload/favicon.png" type="image/png")
+		title=title
+	body
+		link(rel="stylesheet", href="template/styles/css/style.css" + version)
+		include parts/header
+		main.main
+			block content
+		include parts/footer
+
+		script(src="template/libs/jquery/dist/jquery.js" + version)
+		script(src="template/scripts/js/common.js" + version)
