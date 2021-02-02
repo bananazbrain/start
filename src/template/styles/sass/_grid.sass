@@ -12,6 +12,9 @@
 		width: 100%
 
 
+.grid
+	display: grid
+
 .row, .col
 	display: flex
 	flex-wrap: wrap
@@ -25,41 +28,3 @@
 	flex-direction: column
 	&-r
 		flex-direction: column-reverse
-
-
-.row, .col
-	&.--left
-		justify-content: flex-start
-
-	&.--right
-		justify-content: flex-end
-
-	&.--mid
-		justify-content: center
-
-	&.--between
-		justify-content: space-between
-
-	&.--around
-		justify-content: space-around
-
-	&.--top
-		align-items: flex-start
-	&.--bottom
-		align-items: flex-end
-	&.--mid
-		align-items: center
-	&.--baseline
-		align-items: baseline
-	&.--strech
-		align-items: stretch 
-
-.left
-	margin-left: auto
-
-.mid
-	margin-left: auto
-	margin-right: auto
-
-.right
-	margin-left: auto

@@ -3,6 +3,7 @@
 	margin: 0
 	border: 0
 	box-sizing: border-box
+	
 body
 	color: $colorMain
 	font-size: $fzMain
@@ -13,6 +14,7 @@ body
 
 h1, h2, h3, h4, h5, h6
 	font: inherit
+	display: inline
 
 ol, ul
 	list-style: none
@@ -39,7 +41,7 @@ var
 	font-style: normal
 
 strong
-	font-weight: normal
+	font-weight: 700
 
 i
 	font-style: normal
@@ -48,3 +50,9 @@ img
 	display: block
 	max-width: 100% !important
 	max-height: 100% !important
+
+svg
+	display: block
+
+path, circle, rect, line
+	transition: .3s
