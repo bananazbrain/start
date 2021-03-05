@@ -1,7 +1,8 @@
 # Project Title
 
 <ul>
-  <li>Landing page</li>
+  <li>Landing page - Corporate Website - E-commerce Website</li>
+	<li>CMS: Bitrix, Wordpress</li>
   <li>Fully Responsive</li>
   <li>Clean, elegant and efficient code</li>
 </ul>
