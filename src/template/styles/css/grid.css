@@ -1,0 +1,25 @@
+.case {
+  position: relative;
+  width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto; }
+  .case .case {
+    padding-left: 0;
+    padding-right: 0; }
+  @media screen and (max-width: 1220px) {
+    .case {
+      width: 960px; } }
+  @media screen and (max-width: 992px) {
+    .case {
+      width: 730px; } }
+  @media screen and (max-width: 767px) {
+    .case {
+      width: 100%; } }
+
+.grid {
+  display: grid; }
+
+.row, .col {
+  display: flex;
+  flex-wrap: wrap; }

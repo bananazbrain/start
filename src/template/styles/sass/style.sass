@@ -1,10 +1,9 @@
-@import fonts
-@import vars
-@import reset
-@import grid
+@import _fonts
+@import _vars
+@import _reset
+@import _grid
 
 // COMPONENTS
-
 .btn
 	z-index: 1
 	position: relative
@@ -13,27 +12,71 @@
 	justify-content: center
 	text-align: center
 	cursor: pointer
-	border-bottom: none
-	overflow: hidden
-	background-color: transparent
-	transition: .3s
+	color: $cMain
+	font-size: $fzMain
 	font-family: $ffMain
-	width: 100%
-	
-// COMMON ELEMENTS
-
-.inner
+	font-weight: 400
 	overflow: hidden
+	background: transparent
+	transition: .3s
+	border: none
+	outline: none
+	width: 100%
+
+// FADE-IN ANIMATION
+.fade-in
+	animation-name: fade
+	animation-duration: 2s
+	transition: .3s
+
+@keyframes fade
+	0%
+		opacity: 0
+	100%
+		opacity: 1
 
 // TYPOGRAPHY
 .h1
 	font-size: 0
 	font-weight: 0
+	line-height: 0px
 
 .h2
 	font-size: 0
 	font-weight: 0
+	line-height: 0px
 
 .h3
 	font-size: 0
 	font-weight: 0
+	line-height: 0px
+
+// COMMON ELEMENTS
+.inner
+	overflow: hidden
+
+.overflow-disable
+	overflow: hidden
+
+.bgw
+	z-index: 1
+	position: relative
+
+.bg
+	z-index: -1
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center
+
+// HEADER
+
+// MAIN CONTENT
+
+// FOOTER

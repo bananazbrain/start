@@ -1,16 +1,18 @@
 .case
 	position: relative
-	width: (1170px + 0px)
+	width: (1170px + 20px)
 	padding-left: 10px
 	padding-right: 10px
 	margin: 0 auto
-	@media screen and (max-width: 1199px)
-		width: 950px
-	@media screen and (max-width: 991px)
-		width: 750px
+	.case
+		padding-left: 0
+		padding-right: 0
+	@media screen and (max-width: 1220px)
+		width: 960px
+	@media screen and (max-width: 992px)
+		width: 730px
 	@media screen and (max-width: 767px)
 		width: 100%
-
 
 .grid
 	display: grid
@@ -18,9 +20,3 @@
 .row, .col
 	display: flex
 	flex-wrap: wrap
-
-.row
-	flex-direction: row
-
-.col
-	flex-direction: column
